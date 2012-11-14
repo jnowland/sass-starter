@@ -1,0 +1,26 @@
+/*
+
+Custom Functions: http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#mixins
+
+Index:
+
+
+
+*/
+
+/*
+
+1. PEM
+
+This function is set up to convert pixel values into em's.
+
+e.g: font-size:pem(24,16);
+
+
+*/
+
+@function pem($target-px, $context) {
+	$context: 16 !default;
+	@return ($target-px / $context) * 1em;
+}
+

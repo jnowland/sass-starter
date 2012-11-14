@@ -1,0 +1,208 @@
+
+/* forms
+
+http://pea.rs/forms/multi-left-labels
+http://pea.rs/forms/top-labels
+
+ */
+
+
+.copy {
+	.courseFilter {
+		label {
+			float:none;
+			padding-right:1.5em;
+		}
+	}
+}
+
+@media handheld, only screen and (min-width: 520px) {
+	.courseFilter div {
+		display:inline-block;
+	}
+}
+
+.copy { 
+fieldset {
+	margin: 0 0 10px 0;
+	padding: 0 0 10px 0;
+	font-size: 14px;
+	border-bottom: 1px solid #eee;
+
+	legend {
+		padding: 8px;
+		margin: 0 0 8px 0;
+		border-bottom: 1px solid #524F26; 
+		} 
+	}
+
+.form-actions {
+	margin: 0 0 0 20%;
+	padding: 0;
+	border: none; 
+}
+
+.check {
+	padding-left: 20%;
+  
+	label {
+		display: inline;
+		float: none;
+		width: auto;
+		font-weight: normal; 
+	} 
+}
+
+label {
+	float: left;
+	width: 20%;
+	margin: 4px 0 5px 0;
+	font-weight: bold; 
+}
+
+.radio label {
+	display: inline;
+	float: none;
+	width: auto;
+	font-weight: normal; 
+}
+
+input {
+ 
+	&.form-text, &[type="text"], &[type="tel"], &[type="email"] {
+		display: block;
+		width: 50%;
+		font-size: 14px;
+		border: 1px solid #ddd;
+		background: #f5f5f5;
+		-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+		-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+		-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+		-webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+	} 
+}
+
+.gform_wrapper input[type="text"], .gform_wrapper textarea, .gform_wrapper input[type="url"], .gform_wrapper input[type="email"], .gform_wrapper input[type="tel"], .gform_wrapper input[type="number"], .gform_wrapper input[type="password"] {
+	padding:0.75em 1%;
+	font-size:pem(16,16);
+}
+
+
+.gform_wrapper form {
+	margin-bottom:2.5em;
+}
+
+textarea {
+	display: block;
+	width: 50%;
+	padding: 5px;
+	font-size: 14px;
+	border: 1px solid #ddd;
+	background: #f5f5f5;
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+	-moz-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+	-webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.05);
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px; 
+}
+
+input {
+
+	&.form-text:focus, &[type="text"]:focus, &[type="tel"]:focus, &[type="email"]:focus {
+		border: 1px solid #ccc;
+		background: #fff; 
+	} 
+}
+
+textarea {
+	height: 150px; 
+}
+
+select {
+	min-width: 25%;
+	margin: 0; 
+}
+
+.radio ul {
+	margin: 5px 0 0 20%;
+	list-style:none;
+	
+	li {
+		margin: 0 0 5px 0;
+	
+		&:last-child {
+			margin: 0; 
+		} 
+	} 
+}
+
+p.form-help {
+	margin: 5px 0 0 20%;
+	font-size: 12px;
+	color: #999; 
+}
+
+input[type="submit"] {
+	margin: 0;
+	padding: 5px 10px;
+	font-size: 12px;
+	font-weight: bold;
+	border: 1px solid #ccc;
+	background: #eee;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+	&:hover, &:focus {
+		border: 1px solid #bbb;
+		background: #e5e5e5; 
+	}
+	
+	&:active {
+		border: 1px solid #ccc;
+		background: #eee; 
+	} 
+}
+
+@media screen and (max-width: 600px) {
+
+label {
+	display: block;
+	float: none;
+	width: auto;
+	margin: 0 0 5px 0; 
+}
+
+.courseFilter label {
+	display: inline-block;
+	font-size:pem(14,16);
+}
+
+.form-actions, .check, .radio ul, p.form-help {
+	margin-left: 0;
+	padding-left: 0; }
+	
+	input {
+
+		&.form-text, &[type="text"] {
+			width: 96%;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box; 
+		} 
+	}
+
+	textarea {
+		width: 96%;
+		-webkit-box-sizing: border-box;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box; 
+	} 
+
+}
+
+}
+

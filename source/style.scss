@@ -1,0 +1,42 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+
+/*!
+Theme Name: AllSeasons
+Theme URI: http://www.outofthesquare.com.au/
+Description: Theme for SLH by out of the square
+Version: 1.0
+Author: Out Of The Square Media / Beau Charman / James Nowland
+Author URI: http://www.outofthesquare.com.au
+*/
+
+
+/* Style Guide*/
+
+$color-base:#000;
+
+
+/* Imports */
+@import "compass/reset";
+@import "screen/functions";
+@import "screen/grid";
+@import "screen/button";
+@import "screen/forms";
+@import "screen/navigation";
+
+
+.copy {
+	text-rendering:optimizeLegibility;
+	-webkit-font-smoothing:antialiased;
+	font-smoothing:antialiased;
+	color: $color-base;
+	@import "screen/typography";
+}
+
+
+//@import "screen/wordpressEditor";
+//@import "screen/slider";
+//@import "screen/ie";

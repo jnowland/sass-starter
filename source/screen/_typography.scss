@@ -1,0 +1,141 @@
+
+/* Copy file is wrapped in the screen.scss file */
+
+
+$color-base:#333333;
+$color-accent:#F7931E;
+
+
+/*
+Custom google fonts:
+
+font-family: 'Ubuntu', sans-serif;
+//font-family: 'Open Sans', sans-serif;
+font-family: 'Open Sans Condensed', sans-serif;
+
+
+*/
+
+/* TYPOGRAPHY */
+/* Composed to a scale of 12px, 14px, 16px, 18px, 21px, 24px, 36px, 48px, 60px and 72px */
+
+h1, h2, h3, h4, h5, h6 {
+	text-shadow:1px 1px 1px rgba(0,0,0,.10);
+	font-weight:bold;
+	color: $color-accent;
+	font-family: sans-serif;
+}
+h1 {
+	font-size: 3.75em;
+	line-height: 1.2em;
+	margin-bottom: 0.4em;
+} /* 60px / 72px */
+h2 {
+	font-size: 3em;
+	line-height: 1em;
+	margin-bottom: 0.5em;
+
+} /* 48px / 48px */
+h3 {
+	font-size: 2.25em;
+	line-height: 1.3333333333333333333333333333333em;
+	margin-bottom: 0.6667em;
+
+} /* 36px / 48px */ 
+h4 {
+	font-size: 1.5em;
+	line-height: 1em;
+	margin-bottom: 1em;
+
+} /* 24px / 24px */
+h5 {
+	font-size: 1.3125em;
+	line-height: 1.1428571428571428571428571428571em;
+	margin-bottom: 1.1428571428571428571428571428571em;
+
+} /* 21px / 24px */
+
+h6 {
+	font-size: 1.125em;
+	line-height: 1.3333333333333333333333333333333em;
+	margin-bottom: 1.3333333333333333333333333333333em;
+} /* 18px / 24px */
+
+p, ul, ol, blockquote, pre, td, th, label {
+	font-size: 1em;
+	line-height: 1.5em;
+	margin-bottom: 1.5em;
+} /* 16px / 24px */
+
+small, p.small {
+	font-size: 0.875em;
+	line-height: 1.7142857142857142857142857142857em;
+	margin-bottom: 1.7142857142857142857142857142857em;
+} /* 14px / 24px */
+
+
+/* QUOTES */
+pre, blockquote, q {quotes: none}
+blockquote:before, blockquote:after, q:before, q:after, pre:before, pre:after {content: ''; content: none}
+blockquote, q, cite {font-style: italic}
+blockquote {padding: 0.5em 0 0.5em 1em; border-left: 3px solid $color-accent; margin: 1em 0;}
+blockquote > p {padding: 0; margin: 0;}
+
+
+strong {
+	font-weight: bold;
+}
+
+em {
+	font-style: italic;
+}
+
+pre {
+	font-family: Courier, monospace; 
+	margin: 1em 0;
+}
+
+
+
+/* Links  */
+
+a:link, a:visited {
+	color: $color-accent;
+
+}
+
+a:hover {
+	text-decoration: none;
+
+}
+
+
+/* Lists */
+
+ul {
+
+	padding: 0 0 0 1em;
+	list-style-type: disc;
+}
+
+ul li,
+ol li {
+	margin: 0 0 0.5em 1em;
+}
+
+ol {
+	padding: 0 0 0 1em;
+	list-style-type: decimal;
+}
+
+
+/* Selection */
+
+::selection {
+	background: $color-accent; /* Safari */
+	color: #fff;
+	}
+::-moz-selection {
+	background: $color-accent; /* Firefox */
+	color: #fff;
+}

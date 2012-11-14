@@ -1,0 +1,49 @@
+/*
+Mixins
+
+Custom Mixins: http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html#mixins
+
+Index:
+
+1. Clearfix
+2. Rem
+3.
+4. 
+5.
+
+*/
+
+
+@mixin logo-a {
+	> a {
+		display:block;
+		width:100%;
+		height:100%;
+		text-indent:-9999em;
+		overflow:hidden;
+	}
+}
+
+
+@mixin navigation-list {
+
+	ul {
+	    list-style-type:none;
+	    padding:0;
+	    margin:0;
+	    overflow:hidden;
+	    > li{
+	        display:block;
+	        float:left;
+
+	        a {
+	        	text-decoration:none;
+	        }
+	        &:last-child{
+	            margin-right:0px;
+	        }
+	    }
+	}
+}
+
+
